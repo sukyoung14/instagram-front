@@ -1,0 +1,88 @@
+.create-post-container {
+  max-width: 470px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.create-post-container h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.create-post-form {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.image-upload {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #dbdbdb;
+  background: #fafafa;
+}
+
+.upload-label {
+  cursor: pointer;
+  padding: 40px;
+  text-align: center;
+}
+
+.upload-label span {
+  display: block;
+  padding: 10px 20px;
+  background: #0095f6;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.preview {
+  position: relative;
+  width: 100%;
+}
+
+.preview img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.preview button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.create-post-form textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 16px;
+  border: none;
+  resize: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.create-post-form > button {
+  width: 100%;
+  padding: 14px;
+  background: #0095f6;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.create-post-form > button:disabled {
+  opacity: 0.5;
+}

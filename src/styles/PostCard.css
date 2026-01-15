@@ -1,0 +1,102 @@
+.post-card {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-avatar.default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0095f6;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.author-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.delete-btn {
+  color: #ed4956;
+  font-size: 14px;
+}
+
+.post-image {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-actions {
+  padding: 8px 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.like-btn, .comment-btn {
+  font-size: 24px;
+  padding: 8px 0;
+}
+
+.like-btn.liked {
+  color: #ed4956;
+}
+
+.post-likes {
+  padding: 0 16px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.post-content {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.post-content .author-name {
+  margin-right: 6px;
+}
+
+.view-comments {
+  display: block;
+  padding: 8px 16px;
+  color: #8e8e8e;
+  font-size: 14px;
+}
+
+.post-time {
+  padding: 8px 16px 16px;
+  color: #8e8e8e;
+  font-size: 10px;
+  text-transform: uppercase;
+}

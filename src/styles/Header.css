@@ -1,0 +1,73 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #fff;
+  border-bottom: 1px solid #dbdbdb;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 935px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-family: 'Lobster', cursive;
+  font-size: 28px;
+  color: #262626;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #262626;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #8e8e8e;
+}
+
+.nav-link.signup {
+  background: #0095f6;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.profile-link img,
+.profile-link .avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-link .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0095f6;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.logout-btn {
+  color: #0095f6;
+  font-size: 14px;
+  font-weight: 600;
+}
