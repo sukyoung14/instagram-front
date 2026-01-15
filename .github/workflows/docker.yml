@@ -1,0 +1,25 @@
+name: build and push
+
+on:
+  push:
+    branches: [main]
+
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout
+          uses: actions/checkout@4
+
+        - name: login to docker hub
+          uses: docker/login-action@v3
+          with:
+            username: ${{ secrets.DOCKERHUB_ID }}
+            password: ${{ secrets.DOCKERHUB_PW }}
+
+        - name: build and push
+          uses: docker/build-push-action@v6
+          with:
+            context: "."
+            push: true
+            tags: ${{ secrets.DOCKERHUB_ID }}/insta-front:latest
