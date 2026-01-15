@@ -20,6 +20,6 @@ jobs:
       - name: build and push
         uses: docker/build-push-action@v6
         with:
-          context: "."
+          context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_ID }}/insta-front:latest
